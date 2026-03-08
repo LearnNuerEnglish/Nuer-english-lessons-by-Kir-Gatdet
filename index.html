@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My GitHub Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#0d1117;
+color:#c9d1d9;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#161b22;
+}
+
+nav h1{
+color:white;
+font-size:22px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li{
+cursor:pointer;
+}
+
+nav ul li:hover{
+color:#58a6ff;
+}
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h2{
+font-size:50px;
+color:white;
+margin-bottom:20px;
+}
+
+.hero p{
+color:#8b949e;
+font-size:18px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#238636;
+color:white;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#2ea043;
+}
+
+/* Repositories */
+
+.repo-section{
+padding:60px;
+}
+
+.repo-section h2{
+margin-bottom:30px;
+}
+
+.repos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.repo{
+background:#161b22;
+padding:20px;
+border-radius:8px;
+border:1px solid #30363d;
+transition:0.3s;
+}
+
+.repo:hover{
+transform:translateY(-5px);
+border-color:#58a6ff;
+}
+
+.repo h3{
+color:#58a6ff;
+margin-bottom:10px;
+}
+
+.repo p{
+font-size:14px;
+color:#8b949e;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:40px;
+border-top:1px solid #30363d;
+color:#8b949e;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<h1>MyGit</h1>
+
+<ul>
+<li>Home</li>
+<li>Projects</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h2>Build Software Better</h2>
+
+<p>Discover, share, and collaborate on code.</p>
+
+<button>View Projects</button>
+
+</section>
+
+<section class="repo-section">
+
+<h2>Popular Repositories</h2>
+
+<div class="repos">
+
+<div class="repo">
+<h3>AI Chatbot</h3>
+<p>Machine learning chatbot built with Python.</p>
+</div>
+
+<div class="repo">
+<h3>Portfolio Website</h3>
+<p>Personal developer portfolio with modern UI.</p>
+</div>
+
+<div class="repo">
+<h3>Weather App</h3>
+<p>Real-time weather application using API.</p>
+</div>
+
+<div class="repo">
+<h3>Task Manager</h3>
+<p>Productivity web app for managing tasks.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 MyGit. Built with HTML & CSS.</p>
+
+</footer>
+
+</body>
+</html>
